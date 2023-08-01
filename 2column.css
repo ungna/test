@@ -1,0 +1,41 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:1200px;
+    /* 여기에 auto 해야지 자동으로 가운데 정렬 */
+    margin: 20px auto;
+}
+
+header{
+    background-color: rgb(172, 172, 172);
+    width: 100%;
+    height: 100px;
+}
+
+aside{
+    background-color: rgb(233, 233, 233);
+    width: 30%;
+    height: 300px;
+    /* aside는 float써야됨 */
+    float: left;
+}
+
+sector.contents{
+    background-color: rgb(247, 247, 247);
+    width: 70%;
+    height: 300px;
+    /* sector에 들어가면 float써야됨 */
+    float: right;
+}
+
+footer{
+    background-color: rgb(172, 172, 172);
+    width: 100%;
+    height: 100px;
+    /* 위에서 float썼으니까 clear해줘야됨 */
+    clear: both;
+}
