@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지연습</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src = "./js/jquery-3.1.1.min.js"></script>
+    <script src = "./js/script.js"> </script>
 </head>
 <body>
     <div id="container">
         <header id="header">
             <h1>
-                <img src="./image/lostark.webp"  height="100px">
+                <img src="./images/lostark.webp"  height="100px">
                 <a href="#"></a>
                 
             </h1>
@@ -18,24 +20,103 @@
 
         <nav>
             <ul>
-                <li><a href="#">blank1</a></li>
-                <li><a href="#">blank2</a></li>
-                <li><a href="#">blank3</a></li>
-                <li><a href="#">blank4</a></li>
+                <li class="menu">
+                    <a href="#">메인메뉴</a>
+                    <ul class="submenu">
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">메인메뉴2</a>
+                    <ul class="submenu">
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">메인메뉴3</a>
+                    <ul class="submenu">
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">메인메뉴4</a>
+                    <ul class="submenu">
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         
-        <div id="main" >
-            <iframe name="iframe1" src="./image/valtan.png" width= "900px" height="600px"></iframe>
+        <div id="slideShow">
+            <ul class="slides">
+                <li><img src="./images/event2_swiper1.png" alt=""></li>
+                <li><img src="./images/event1_swiper1.png" alt=""></li>
+                <li><img src="./images/event1_swiper2.png" alt=""></li>
+            </ul>  
+            <p class="controller">
+            
+            <!-- &lang: 왼쪽 방향 화살표
+            &rang: 오른쪽 방향 화살표 -->
+                <span class="prev">&lang;</span>  
+                <span class="next">&rang;</span>
+            </p>
         </div>
 
-        <div id="main2" >
-            <iframe name="iframe1" src="./image/valtan.png" width= "900px" height="600px"></iframe>
+        <div id="contents">
+            <div id="main" >
+                <h1 style="margin: 20px;">공지사항</h1>
+                <ul>
+                    <li>____________________________________</li>
+                    <li>____________________________________</li>
+                    <li>____________________________________</li>
+                    <li>____________________________________</li>
+                    <li>____________________________________</li>
+                </ul>
+
+            </div>
+
+            <div id="main3" >
+                <h1 style="margin: 20px;">업데이트</h1>
+                <a href="#"><img src="./images/souleater.jpg"></a>
+                <h3><a href="#">신규클라스 소울이터 출시!!</a></h3>
+            </div>
+
+            <div id="main2" > 
+                <h1 style="margin: 20px;">공략 영상</h1>
+                <iframe width="400" height="226"src="https://www.youtube.com/embed/_2EDb2SW_7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls>
+                    <a href="#"></a>
+                </iframe>
+                <a href="#"><h3>unggna님의 공략영상</h3></a>
+            </div>
         </div>
 
         <footer id="footer">
+            <ul id="footerMenu">
+                <li>회사소개</li>
+                <li>이용약관</li>
+                <li>회사소개나함해볼까</li>
+                <li>이용약관설명할까</li>
+            </ul>
+
+            <div id="footerSNS">
+                <a href="#"><img src="./images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="./images/instagram.jpg" alt="instagram"></a>
+                <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+            </div>
             
+            <ul id="footerId">
+                <li>이름 :   xxx</li>
+                <li>전화번호: 010-xxxx-xxxx</li>
+            </ul>
+
+
         </footer>
-    </div>
+
+        <script src="./js/slides.js"></script>
 </body>
 </html>
